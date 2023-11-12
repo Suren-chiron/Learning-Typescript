@@ -220,3 +220,23 @@
 // addAndHandle(10, 20, (result: number) => {
 //    return result;
 // });
+
+// info : Unknown Type
+// let userInput: unknown;
+// let userName: string;
+
+// userInput = 3;
+// userInput = 'mohammad';
+
+// that is the different between unknown type and any type
+// when set userInput type to any this above code will work but when changed to unknown it's not work
+
+// userName = userInput;
+
+// info : Never Type
+
+// when we want throw an error or something that return anything we use never
+
+// function fail(msg: string): never {
+//    throw new Error(msg);
+// }
