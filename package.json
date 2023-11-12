@@ -1,0 +1,21 @@
+{
+   "name": "training-typescript-maximilian-course",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "eslint": "^8.53.0",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-plugin-prettier": "^5.0.1",
+      "eslint-plugin-typescript": "^0.14.0",
+      "prettier": "^3.0.3"
+   },
+   "dependencies": {
+      "@typescript-eslint/eslint-plugin": "^6.10.0"
+   }
+}
