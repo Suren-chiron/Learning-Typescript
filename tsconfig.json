@@ -88,7 +88,7 @@
       // "noImplicitThis": true,
       // "useUnknownInCatchVariables": true,
       // "alwaysStrict": true,
-      "noUnusedLocals": true,
+      // todo "noUnusedLocals": true,
       "noUnusedParameters": true,
       // "exactOptionalPropertyTypes": true,
       // todo "noImplicitReturns": true,
@@ -102,5 +102,6 @@
       // "skipDefaultLibCheck": true,
       "skipLibCheck": true
    },
-   "exclude": ["./coreTypes/", "./customType/"]
+   "include": ["./src"],
+   // "exclude": ["./coreTypes/", "./customType/"],
 }

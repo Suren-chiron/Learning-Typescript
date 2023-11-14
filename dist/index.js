@@ -188,6 +188,3 @@
 // function fail(msg: string): never {
 //    throw new Error(msg);
 // }
-function test(data) {
-    console.log(data);
-}
