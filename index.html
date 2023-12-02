@@ -5,10 +5,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <script src="./dist/index.js" defer></script>
+      <style>
+         body {
+            background-color: rgb(0, 33, 132);
+            color: white
+         }
+      </style>
    </head>
    <body>
       <input type="number" id="num1" />
       <input type="number" id="num2" />
-      <button>Add!</button>
+      <button id="button">Add!</button>
+      <input type="file" name="getFile" id="getFile" accept="text/plain" onchange="openFile(event)" />
    </body>
 </html>
