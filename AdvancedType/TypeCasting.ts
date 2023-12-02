@@ -1,4 +1,4 @@
-// !error this is error when we can't use typeCasting
+// error this is error when we can't use typeCasting
 
 // const userInputElement = document.getElementById('user-input');
 

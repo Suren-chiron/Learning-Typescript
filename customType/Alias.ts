@@ -13,13 +13,7 @@ type DetailsPerson = {
 };
 
 function person(details: DetailsPerson) {
-   console.log(
-      'my name is' +
-         details.name +
-         details.family +
-         " and i'm " +
-         details.age
-   );
+   console.log('my name is' + details.name + details.family + " and i'm " + details.age);
 }
 
 person({ name: 'mohammad', family: 'karimi', age: 17 });
