@@ -1,12 +1,8 @@
-type Lengthy = {
-   length: number;
-};
-
-function countAndDescribe<T extends Lengthy>(element: T): [T, string] {
-   let descriptionText = 'Got no value.';
-   if (element.length === 1) descriptionText = 'Got 1 value.';
-   if (element.length > 1) descriptionText = 'Got' + element.length + 'value';
-   return [element, descriptionText];
+interface Point {
+   x: number;
 }
 
-console.log(countAndDescribe('test'));
+interface Point {
+   y: number;
+}
+const point: Point = { x: 1, y: 2 };
