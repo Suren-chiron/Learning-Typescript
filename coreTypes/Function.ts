@@ -9,8 +9,6 @@ function nothing(number1: number, number2: number): void {
 }
 
 type familyType = {
-   mother: string;
-   father: string;
    brothers: string[];
    sisters: string | string[];
 };
@@ -21,11 +19,9 @@ function nameFamily(family: familyType): familyType {
 
 console.log(
    nameFamily({
-      mother: 'mother',
-      father: 'father',
-      brothers: ['ali', 'mahdi'],
+      brothers: ['bor', 'bor1'],
       sisters: '',
-   })
+   }),
 );
 
 // info: Functions as Types
@@ -38,11 +34,7 @@ console.log(combineValues(8, 8));
 
 // info: Function Types Callbacks
 
-function addAndHandle(
-   n1: number,
-   n2: number,
-   cb: (num: number) => void
-) {
+function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
    const result = n1 + n2;
    cb(result);
 }
