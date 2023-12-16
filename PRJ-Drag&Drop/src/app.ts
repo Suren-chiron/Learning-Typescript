@@ -1,8 +1,7 @@
-const formCreatingPro = document.getElementById('formCreatingPro') as HTMLFormElement;
-const titlePrj = document.getElementById('title') as HTMLInputElement;
-const descriptionPrj = document.getElementById('description') as HTMLInputElement;
-const peoplePrj = document.getElementById('people') as HTMLInputElement;
-const listsActivePrj = document.getElementById('listsOFActiveProject') as HTMLUListElement;
+const titlePrj = <HTMLInputElement>document.getElementById('title')!;
+const descriptionPrj = <HTMLInputElement>document.getElementById('description')!;
+const peoplePrj = <HTMLInputElement>document.getElementById('people')!;
+const listsActivePrj = <HTMLUListElement>document.getElementById('listsOFActiveProject')!;
 
 type TPrjStructure = {
    title: string;
@@ -19,34 +18,37 @@ function createPrj(e: Event) {
          people: +peoplePrj.value,
       };
       addPrjToDom(packetPrj);
-      console.log(packetPrj);
    }
 }
 
-function addPrjToDom(pro: TPrjStructure) {
-   let tagLi = document.createElement('li') as HTMLLIElement;
-   let tagH2 = document.createElement('h2');
-   let tagH3 = document.createElement('h3');
-   let tagP = document.createElement('p');
-   tagH2.innerHTML = pro.title;
-   tagH3.innerHTML = pro.description;
-   tagP.innerHTML = pro.people.toString();
+function addPrjToDom(prj: TPrjStructure) {
+   let tagLi = <HTMLLIElement>document.createElement('li');
+   let tagH2 = <HTMLHeadingElement>document.createElement('h2');
+   let tagH3 = <HTMLHeadingElement>document.createElement('h3');
+   let tagP = <HTMLParagraphElement>document.createElement('p');
+   tagH2.innerHTML = prj.title;
+   tagH3.innerHTML = prj.description;
+   tagP.innerHTML = prj.people.toString();
 
    tagLi.appendChild(tagH2);
    tagLi.appendChild(tagH3);
    tagLi.appendChild(tagP);
    tagLi.className = 'projects';
-   tagLi.id = 'title';
-   //    tagLi.addEventListener('dragstart', (event) => {
-   //       event!.dataTransfer!.setData('text', event.target);
-   //    });
+   tagLi.id = Math.random().toString();
    tagLi.draggable = true;
+   tagLi.addEventListener('dragstart', (event: DragEvent) => {
+      event.dataTransfer!.setData('text', tagLi.id);
+   });
    tagH2.className = 'projectTitle';
    listsActivePrj.appendChild(tagLi);
 }
 
-function dropList(ev : any) {
+function dropList(ev: DragEvent) {
    ev.preventDefault();
-   var data = ev.dataTransfer.getData('text');
-   ev.target.appendChild(document.getElementById(data));
+   let data = ev.dataTransfer!.getData('text');
+   ev.target!.appendChild(document.getElementById(data));
+}
+
+function allowDrop(ev: DragEvent) {
+   ev.preventDefault();
 }
