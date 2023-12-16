@@ -8,7 +8,7 @@ const fetchedUserData = {
    job: { title: 'CEO', description: 'My own company' },
 };
 
-console.log(fetchedUserData?.job?.title); // when we use Optional Chaining if data not defined this return undefined but when we dent use this we get error like above code
+console.log(fetchedUserData?.job?.title); // when we use Optional Chaining if data not defined this return undefined but when we don't use this we get error like above code
 // console.log(fetchedUserData.job.title)
 
 // info another useful example
