@@ -26,27 +26,13 @@
             <button type="submit">ADD PROJECT</button>
          </form>
       </div>
-      <div id="active-projects" class="active">
-         <ul id="listsOFActiveProject" class='ULlistsOFActiveProject'></ul>
+      <div id="active-projects" class="active" >
+         <ul id="listsOFActiveProject" class="ULlistsOFActiveProject" ondrop="dropList(event)" ondragover="allowDrop(event)"></ul>
       </div>
-      <div id="finished-projects">
-         <ul id="listsOFFinishedProject" ondrop="dropList(event)" ondragover="(event) => event.preventDefault()"></ul>
+      <div id="finished-projects" ondrop="dropList(event)" ondragover="allowDrop(event)">
+         <ul id="listsOFFinishedProject" ></ul>
       </div>
-      <!-- <div id="single-project">
-         <li draggable="true">
-            <h2></h2>
-            <h3></h3>
-            <p></p>
-         </li>
-      </div>
-      <div id="project-list">
-         <section class="projects">
-            <header>
-               <h2></h2>
-            </header>
-            <ul></ul>
-         </section>
-      </div> -->
+      <button onclick="testClickButton(event)">fe</button>
       <div id="app"></div>
    </body>
 </html>

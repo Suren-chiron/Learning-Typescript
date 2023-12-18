@@ -8,7 +8,7 @@
       // "disableSolutionSearching": true,
       // "disableReferencedProjectLoad": true,
       /* Language and Environment */
-      "target": "ESNext",
+      "target": "ES2016",
       "lib": ["ESNext", "DOM"],
       "jsx": "preserve",
       // "experimentalDecorators": true,
