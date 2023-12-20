@@ -8,7 +8,7 @@
       // "disableSolutionSearching": true,
       // "disableReferencedProjectLoad": true,
       /* Language and Environment */
-      "target": "ES2016",
+      "target": "ES6",
       "lib": ["ESNext", "DOM"],
       "jsx": "preserve",
       // "experimentalDecorators": true,
@@ -22,8 +22,8 @@
       // "moduleDetection": "auto",
 
       /* Modules */
-      "module": "commonjs",
-      "rootDir": "./src",
+      "module": "es2015",
+      // "rootDir": "./src",
       // "moduleResolution": "node10",
       // "baseUrl": "./",
       // "paths": {},
