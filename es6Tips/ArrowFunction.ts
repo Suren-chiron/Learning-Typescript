@@ -18,7 +18,7 @@ if (buttonOld) {
 printOutputOld(addOld(undefined, 23));
 
 // info new function which allow in es6
-const add = (a: number = 23, b: number) => a + b;
+const add_ArrowFun = (a: number = 23, b: number) => a + b;
 
 const printOutput: (a: number | string) => void = (OutPot) => console.log(OutPot);
 
@@ -28,4 +28,4 @@ if (button) {
    button.addEventListener('click', (event) => console.log(event));
 }
 
-printOutput(add(undefined, 23));
+printOutput(add_ArrowFun(undefined, 23));

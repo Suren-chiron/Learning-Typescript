@@ -1,6 +1,6 @@
 // info : Unknown Type
 // ? The unknown type represents any value. This is similar to the any type, but is safer because it’s not legal to do anything with an unknown value:
-// * مثل امام زمان همه جا هست و هیچ جا نیست. اینم مث اون دقیقا معلوم نیست فازش چیه
+// * مثل مهدی شیعه همه جا هست و هیچ جا نیست. اینم مث اون دقیقا معلوم نیست فازش چیه
 let userInput: unknown;
 let userName: string;
 

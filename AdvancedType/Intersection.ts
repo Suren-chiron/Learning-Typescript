@@ -1,14 +1,14 @@
-type Admin = {
+type Admin_InterSection = {
    name: string;
    privileges: string[];
 };
 
-type Employee = {
+type Employee_InterSection = {
    name: string;
    startDate: Date;
 };
 
-type ElevatedEmployee = Admin & Employee;
+type ElevatedEmployee = Admin_InterSection & Employee_InterSection;
 
 const testIntersection: ElevatedEmployee = {
    name: 'mohammad',

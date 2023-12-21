@@ -12,8 +12,8 @@ type DetailsPerson = {
    age: number;
 };
 
-function person(details: DetailsPerson) {
+function person_Alias(details: DetailsPerson) {
    console.log('my name is' + details.name + details.family + " and i'm " + details.age);
 }
 
-person({ name: 'mohammad', family: 'karimi', age: 17 });
+person_Alias({ name: 'mohammad', family: 'karimi', age: 17 });

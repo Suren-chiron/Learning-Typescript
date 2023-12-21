@@ -1,6 +1,6 @@
 // info: object and nested object type
 
-const person: {
+const person_Object: {
    name: string;
    age: number;
 } = {
@@ -26,4 +26,4 @@ const product: {
    },
 };
 
-console.log(person, product);
+console.log(person_Object, product);

@@ -1,7 +1,7 @@
 // Variables declared by let are only available inside the block where they’re defined.
 // Variables declared by var are available throughout the function in which they’re declared.
 
-function testVar(age) {
+function testVar(age: number) {
    var varTest = 12;
    if (age > 10) {
       var varTest = 13;
@@ -9,7 +9,7 @@ function testVar(age) {
    console.log(varTest);
 }
 
-function testLet(age) {
+function testLet(age: number) {
    let letTest = 12;
    if (age > 10) {
       let letTest = 13;

@@ -1,6 +1,6 @@
 // info : Type Basic Function
 
-function add(number1: number, number2: number): number {
+function add_Function(number1: number, number2: number): number {
    return number1 + number2;
 }
 
@@ -28,7 +28,7 @@ console.log(
 
 let combineValues: (a: number, b: number) => number;
 
-combineValues = add;
+combineValues = add_Function;
 
 console.log(combineValues(8, 8));
 
