@@ -2,7 +2,7 @@ module.exports = {
    env: { browser: true, es6: true },
    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
    ignorePatterns: ['.eslintrc.cjs', '*.html', '*.css'],
-   plugins: ['@typescript-eslint', 'prettier'], 
+   plugins: ['@typescript-eslint', 'prettier'],
    rules: {
       'no-redeclare': 'off',
       'no-unused-vars': 'off',
@@ -17,5 +17,8 @@ module.exports = {
       '@typescript-eslint/no-namespace': 'off',
       '@typescript-eslint/triple-slash-reference': 'off',
       'no-inner-declarations': 'off',
+      '@typescript-eslint/no-var-requires': 'off',
+      'no-undef': 'off',
+      'no-var': 'off',
    },
 };
