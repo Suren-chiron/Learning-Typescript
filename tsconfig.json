@@ -49,7 +49,7 @@
       // "declaration": true,
       // "declarationMap": true,
       // "emitDeclarationOnly": true,
-      // todo "sourceMap": true,
+      "sourceMap": true,
       // "inlineSourceMap": true,
       // "outFile": "./",
       "outDir": "./dist",
@@ -102,6 +102,6 @@
       // "skipDefaultLibCheck": true,
       "skipLibCheck": true
    },
-   "include": ["./src"],
+   // "include": ["./src"]
    // "exclude": ["./coreTypes/", "./customType/"],
 }
