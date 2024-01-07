@@ -37,7 +37,7 @@ const user2: Record<limitKey, TUserRecord | string> = {
    },
 };
 
-console.log(user2.user1); // "exampl
+console.log(user2.user1); // "example
 
 /// info : A  Quirks, also we can define set type for key
 
